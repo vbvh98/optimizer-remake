@@ -1,0 +1,75 @@
+.resultbox {
+    width: 80vw;
+    max-height: 80vh;
+    border-radius: 2em;
+    padding: 2em;
+    background: whitesmoke;
+    width: 80%;
+    text-align: center;
+    text-transform: capitalize;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.tablediv {
+    flex: 1;
+    height: 70vh;
+    overflow-y: scroll;
+}
+
+.tablediv > table {
+    width: 100%;
+}
+
+.tablediv > table > thead {
+    background-image: linear-gradient(135deg, #f761a1 10%, #8c1bab 100%);
+}
+
+.profile {
+    padding: 0;
+}
+
+.profile table {
+    width: 100%;
+}
+
+.profile tr {
+    width: 100%;
+}
+
+.profile td {
+    background-image: linear-gradient(135deg, #fdeb71 10%, #f8d800 100%);
+}
+
+.buttons {
+    height: 10vh;
+    justify-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons button:nth-last-of-type(1) {
+    margin-left: 40px;
+}
+
+button {
+    border-radius: 1em;
+    padding: 1em 1.2em;
+    align-self: center;
+    color: white;
+    border: none;
+    width: 140px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #ffe53b;
+    background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
+    box-shadow: 8px 8px 10px #ff252530;
+    transition: transform 0.3s ease-in-out;
+    outline: none;
+}
+
+button:hover {
+    transform: scale(1.2);
+}

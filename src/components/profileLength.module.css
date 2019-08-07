@@ -1,0 +1,35 @@
+.optionbox {
+    height: 40vh;
+    border-radius: 2em;
+    padding: 2em;
+    background: whitesmoke;
+    width: 80%;
+    text-align: center;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.optionbox input,
+.button {
+    border: 0.2em solid #e7e7e7;
+    border-radius: 1em;
+    padding: 1em 1.2em;
+}
+.button {
+    align-self: center;
+    background: whitesmoke;
+    border: none;
+    width: 140px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #ffe53b;
+    background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
+    box-shadow: 8px 8px 10px #ff252530;
+    transition: transform 0.3s ease-in-out;
+    outline: none;
+}
+
+.button:hover {
+    transform: scale(1.2);
+}
