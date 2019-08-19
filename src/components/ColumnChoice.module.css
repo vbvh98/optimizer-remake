@@ -1,33 +1,33 @@
 .optionbox {
-    border-radius: 2em;
-    padding: 2em;
-    background: whitesmoke;
-    width: 80%;
-    text-align: center;
-    text-transform: capitalize;
+	border-radius: 2em;
+	padding: 2em;
+	background: whitesmoke;
+	width: 80%;
+	text-align: center;
+	text-transform: capitalize;
 }
 
 .optionbox span {
-    display: inline-block;
-    width: 100px;
-    border-radius: 1em;
-    padding: 0.2em;
-    background-color: #21d4fd;
-    background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
-    color: #f7f7f7;
-    font-size: 1.4em;
-    cursor: pointer;
-    box-shadow: 4px 4px 10px #21d4fd30;
-    transition: transform 0.3s ease-in-out;
+	display: inline-block;
+	width: 100px;
+	border-radius: 1em;
+	padding: 0.2em;
+	background-color: #21d4fd;
+	background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+	color: #f7f7f7;
+	font-size: 1.4em;
+	cursor: pointer;
+	box-shadow: 4px 4px 10px #21d4fd30;
+	transition: transform 0.3s ease-in-out;
 }
 
 .optionbox span:nth-last-of-type(1) {
-    margin-left: 80px;
-    background-color: #fee140;
-    background-image: linear-gradient(90deg, #fee140 0%, #fa709a 100%);
-    box-shadow: 4px 4px 10px #fee14030;
+	margin-left: 80px;
+	background-color: #fee140;
+	background-image: linear-gradient(90deg, #fee140 0%, #fa709a 100%);
+	box-shadow: 4px 4px 10px #fee14030;
 }
 
 .optionbox span:hover {
-    transform: scale(1.2);
+	transform: scale(1.2);
 }

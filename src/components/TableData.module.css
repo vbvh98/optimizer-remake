@@ -1,35 +1,35 @@
 .textareawrapper {
-    width: 80%;
-    background: white;
-    border-radius: 1em;
-    height: 90vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 2px 2px 10px #e7e7e760;
+	width: 80%;
+	background: white;
+	border-radius: 1em;
+	height: 90vh;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 2px 2px 10px #e7e7e760;
 }
 
 .textareawrapper textarea,
 .button {
-    border: 0.2em solid #e7e7e7;
-    border-radius: 1em;
-    padding: 1em 1.2em;
-    background: whitesmoke;
+	border: 0.2em solid #e7e7e7;
+	border-radius: 1em;
+	padding: 1em 1.2em;
+	background: whitesmoke;
 }
 
 .button {
-    border: none;
-    width: 140px;
-    font-weight: bold;
-    text-transform: uppercase;
-    background-color: #ffe53b;
-    background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
-    box-shadow: 8px 8px 10px #ff252530;
-    transition: transform 0.3s ease-in-out;
-    outline: none;
+	border: none;
+	width: 140px;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: #ffe53b;
+	background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
+	box-shadow: 8px 8px 10px #ff252530;
+	transition: transform 0.3s ease-in-out;
+	outline: none;
 }
 
 .button:hover {
-    transform: scale(1.2);
+	transform: scale(1.2);
 }

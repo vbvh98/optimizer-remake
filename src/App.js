@@ -9,18 +9,18 @@ import ProfileLength from "./components/ProfileLength";
 import Result from "./components/Result";
 
 function App() {
-    return (
-        <Provider store={store}>
-            <BrowserRouter>
-                <Switch>
-                    <Route path="/" exact component={ColumnChoice} />
-                    <Route path="/inputTable" component={TableData} />
-                    <Route path="/profileLength" component={ProfileLength} />
-                    <Route path="/result" component={Result} />
-                </Switch>
-            </BrowserRouter>
-        </Provider>
-    );
+	return (
+		<Provider store={store}>
+			<BrowserRouter>
+				<Switch>
+					<Route path="/" exact component={ColumnChoice} />
+					<Route path="/inputTable" component={TableData} />
+					<Route path="/profileLength" component={ProfileLength} />
+					<Route path="/result" component={Result} />
+				</Switch>
+			</BrowserRouter>
+		</Provider>
+	);
 }
 
 export default App;

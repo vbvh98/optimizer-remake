@@ -1,30 +1,30 @@
 import { Board, BoardCollection } from "./Board";
 
 const greedy_solution = (pieces, material_size) => {
-    let bc = new BoardCollection();
-    bc.append(new Board(material_size));
+	let bc = new BoardCollection();
+	bc.append(new Board(material_size));
 
-    pieces.sort((a, b) => {
-        return b.length - a.length;
-    });
+	pieces.sort((a, b) => {
+		return b.length - a.length;
+	});
 
-    for (let piece of pieces.map(e => ({ ...e }))) {
-        let piece_added = false;
-        for (let board of bc.contents) {
-            if (board.space_remaning >= piece.length) {
-                board.push(piece);
-                pieces.splice(pieces.indexOf(piece), 1);
-                piece_added = true;
-                break;
-            }
-        }
-        if (!piece_added) {
-            bc.append(new Board(material_size));
-            bc.last.push(piece);
-            pieces.splice(pieces.indexOf(piece), 1);
-        }
-    }
-    return bc.contents;
+	for (let piece of pieces.map(e => ({ ...e }))) {
+		let piece_added = false;
+		for (let board of bc.contents) {
+			if (board.space_remaning >= piece.length) {
+				board.push(piece);
+				pieces.splice(pieces.indexOf(piece), 1);
+				piece_added = true;
+				break;
+			}
+		}
+		if (!piece_added) {
+			bc.append(new Board(material_size));
+			bc.last.push(piece);
+			pieces.splice(pieces.indexOf(piece), 1);
+		}
+	}
+	return bc.contents;
 };
 
 export default greedy_solution;
@@ -37,5 +37,5 @@ export default greedy_solution;
 // }));
 
 // for (let board of greedy_solution(final_inp, 2050)) {
-//     console.table({ items: board.items.map(e => e.label), unused: board.space_remaning });
+//     { items: board.items.map(e => e.label), unused: board.space_remaning });
 // }
